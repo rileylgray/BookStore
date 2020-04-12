@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Book Store</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Style/main.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <h1>Sheridan Books Store</h1>
+         <a href="index.html" class="button">Home</a>
+        <a href="AddBook.html" class="buttonS">Add a Book</a>
+        <a href="Dummy.html" class="button">Generate Dummy Records</a>
+        <a href="ViewServlet" class="button">View Books</a>
+        <a href="Delete.html" class="button">Delete Book</a>
+        <a href="Edit.html" class="button">Edit Book</a>
+        <a href="Purchase.html" class="button">Purchase Book</a>
+
+        <div class="menu">
+        <form method="POST" action="AddBookServlet">
+            Title: <input type="text" name="title">
+            </br>
+            Author: <input type="text" name="author">  
+            </br>
+            Price: <input type="text" name="price">
+            </br> 
+            Quantity: <input type="text" name="quantity">
+            </br>
+            Related Courses: <input id="big" type="text" name="courses">
+            </br> 
+            Campus: <select name="store">
+                <option value="brampton">Brampton</option>
+                <option value="oakville">Oakville</option>
+                <option value="mississagua">Mississagua</option>
+            </select>
+            </br> </br>
+            <input type="Submit" value="Submit">
+        </form>
+        </div>
+                <footer></footer>
+
+    </body>
+</html>
